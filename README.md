@@ -96,7 +96,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 1. Ping/ICMP Test:</p>
    - You can test connectivity by running a ping command from one VM to another (ensure ICMP traffic is allowed in your NSG).</p>
 
-   ![image](https://github.com/user-attachments/assets/9c6e7955-742d-4d95-994f-fc8ef8545295)
+![image](https://github.com/user-attachments/assets/29f00ef8-3f11-4ee6-b777-3d3883a782da)
 
 <br />
 <br />
@@ -105,7 +105,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 2. Telnet/SSH Test:
    - For testing TCP connectivity (example -> SSH to a VM on port 22), use telnet or nc commands.</p>
 
-   ![image](https://github.com/user-attachments/assets/9c6e7955-742d-4d95-994f-fc8ef8545295)
+![image](https://github.com/user-attachments/assets/9dd37c56-962c-416a-b4db-b743731b14cc)
 
 <br />
 <br />
@@ -114,7 +114,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 3. Check Network Interfaces:</p>
    - Make sure that the VMs' NICs are configured properly, and check if the NSG is applied to them.</p>
 
-![image](https://github.com/user-attachments/assets/9c6e7955-742d-4d95-994f-fc8ef8545295)
+![image](https://github.com/user-attachments/assets/316f9b1c-eba4-46dd-b0ed-05c8dce67424)
 
 <br />
 <br /> 
@@ -123,7 +123,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 1. Enable Network Watcher:</p>
    - Go to Network Watcher in the Azure Portal and enable it in the region where your VMs are located.</p>
 
-   ![image](https://github.com/user-attachments/assets/9c6e7955-742d-4d95-994f-fc8ef8545295)
+![image](https://github.com/user-attachments/assets/8b007738-c7e6-480a-8177-902f61772ef1)
 
 <br />
 <br />
@@ -132,7 +132,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 2. Use Flow Logs:
    - Enable Network Security Group Flow Logs under Network Watcher to capture traffic data passing through NSGs.
 
-![image](https://github.com/user-attachments/assets/73d570b0-251f-4dba-a4f8-7131cac67a0f)
+![image](https://github.com/user-attachments/assets/05fab9b0-3da7-4d58-8778-5178d67633a2)
+
+
+![image](https://github.com/user-attachments/assets/921f68d6-2647-49f3-b056-a0935ac10adc)
 
 <br />
 <br />
@@ -140,7 +143,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
    - Flow logs provide information such as source IP, destination IP, ports, and protocols. This helps in identifying if traffic is being allowed or blocked by the NSG.
 
-   ![image](https://github.com/user-attachments/assets/9c6e7955-742d-4d95-994f-fc8ef8545295)
+![image](https://github.com/user-attachments/assets/650d30da-c221-40ac-938f-55e4dc3f1610)
 
 <br />
 <br />
@@ -149,7 +152,13 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 3. Connection Troubleshoot:</p>
    - Use Connection Monitor or IP Flow Verify in Network Watcher to test the connectivity between the VMs and inspect whether traffic is being blocked or allowed based on the NSG rules.</p>
 
-![image](https://github.com/user-attachments/assets/9c6e7955-742d-4d95-994f-fc8ef8545295)
+(Connection Monitor)
+![image](https://github.com/user-attachments/assets/be460112-1513-4424-9936-cf22f0412d01)
+
+<br />
+
+(IP Flow Verify)
+![image](https://github.com/user-attachments/assets/ba5e83b8-3a96-45d6-8545-89816c757a0b)
 
 <br />
 <br /> 
